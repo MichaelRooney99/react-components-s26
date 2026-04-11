@@ -12,7 +12,7 @@ const Welcome = () => {
     return (
         <Card className="mt-3">
             <Card.Body>
-                <Card.Title className="mb-4">Welcome from an Input Group</Card.Title>
+                <Card.Title className="mb-4">Greetings from an Input Group</Card.Title>
 
                 <InputGroup className="mb-4">
                     <InputGroup.Text>Name:</InputGroup.Text>
@@ -31,7 +31,11 @@ const Welcome = () => {
                 </InputGroup>
 
                 <Button onClick={
-                            () => setWelcomeMessage(`Hello, ${name}!`)
+                            () => {
+                                if (name) {
+                                    setWelcomeMessage(`Hello, ${name}!`)
+                                }
+                            }
                         }
                         variant="outline-primary"
                 >
