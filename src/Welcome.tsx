@@ -41,6 +41,7 @@ const Welcome = () => {
                 >
                     Enter
                 </Button>
+                
                 <Button className="ms-2" 
                         onClick={
                             () => {
